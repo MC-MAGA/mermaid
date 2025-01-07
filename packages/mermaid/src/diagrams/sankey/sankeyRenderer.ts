@@ -1,12 +1,10 @@
 import type { Diagram } from '../../Diagram.js';
 import { getConfig, defaultConfig } from '../../diagram-api/diagramAPI.js';
-
 import {
   select as d3select,
   scaleOrdinal as d3scaleOrdinal,
   schemeTableau10 as d3schemeTableau10,
 } from 'd3';
-
 import type { SankeyNode as d3SankeyNode } from 'd3-sankey';
 import {
   sankey as d3Sankey,
@@ -16,7 +14,7 @@ import {
   sankeyCenter as d3SankeyCenter,
   sankeyJustify as d3SankeyJustify,
 } from 'd3-sankey';
-import { configureSvgSize } from '../../setupGraphViewbox.js';
+import { setupGraphViewbox } from '../../setupGraphViewbox.js';
 import { Uid } from '../../rendering-util/uid.js';
 import type { SankeyNodeAlignment } from '../../config.type.js';
 
@@ -42,7 +40,7 @@ const alignmentsMap: Record<
 export const draw = function (text: string, id: string, _version: string, diagObj: Diagram): void {
   // Get Sankey config
   const { securityLevel, sankey: conf } = getConfig();
-  const defaultSankeyConfig = defaultConfig!.sankey!;
+  const defaultSankeyConfig = defaultConfig.sankey!;
 
   // TODO:
   // This code repeats for every diagram
@@ -69,12 +67,6 @@ export const draw = function (text: string, id: string, _version: string, diagOb
   const prefix = conf?.prefix ?? defaultSankeyConfig.prefix!;
   const suffix = conf?.suffix ?? defaultSankeyConfig.suffix!;
   const showValues = conf?.showValues ?? defaultSankeyConfig.showValues!;
-
-  // FIX: using max width prevents height from being set, is it intended?
-  // to add height directly one can use `svg.attr('height', height)`
-  //
-  // @ts-ignore TODO: svg type vs selection mismatch
-  configureSvgSize(svg, height, width, useMaxWidth);
 
   // Prepare data for construction based on diagObj.db
   // This must be a mutable object with `nodes` and `links` properties:
@@ -167,7 +159,7 @@ export const draw = function (text: string, id: string, _version: string, diagOb
     .attr('class', 'link')
     .style('mix-blend-mode', 'multiply');
 
-  const linkColor = conf?.linkColor || 'gradient';
+  const linkColor = conf?.linkColor ?? 'gradient';
 
   if (linkColor === 'gradient') {
     const gradient = link
@@ -208,6 +200,8 @@ export const draw = function (text: string, id: string, _version: string, diagOb
     .attr('d', d3SankeyLinkHorizontal())
     .attr('stroke', coloring)
     .attr('stroke-width', (d: any) => Math.max(1, d.width));
+
+  setupGraphViewbox(undefined, svg, 0, useMaxWidth);
 };
 
 export default {

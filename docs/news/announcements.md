@@ -6,18 +6,46 @@
 
 # Announcements
 
-<br />
+## 🚀 Exciting News from Mermaid Chart! 🚀
 
-<a href="https://www.producthunt.com/posts/mermaid-chart?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mermaid&#0045;chart" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=416671&theme=light" alt="Mermaid&#0032;Chart - A&#0032;smarter&#0032;way&#0032;to&#0032;create&#0032;diagrams | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+We're thrilled to announce that Mermaid Chart has successfully raised $7.5 million in Seed funding! 🌟 This achievement marks the beginning of a new era for Mermaid and Mermaid Chart.
 
-## Calling all fans of Mermaid and Mermaid Chart! 🎉
+**Why It Matters for Mermaid Chart:**
 
-We’ve officially made our Product Hunt debut, and would love any and all support from the community!
+- **Empowering Collaboration**: Our tools are designed to enable faster, more efficient team collaboration across any distance, leveraging the best of text, voice, and automation.
+- **Opening New Doors**: Mermaid AI and our Visual Editor are breaking down barriers, making sophisticated diagramming accessible to everyone, not just software engineers.
+- **Looking Forward**: We're not stopping here! Expect groundbreaking features like automated documentation tools, advanced AI diagramming, and high-security on-premise solutions.
 
-[Click here](https://www.producthunt.com/posts/mermaid-chart?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mermaid-chart) to check out our Product Hunt launch.
+**Why It Matters for Mermaid JS:**
 
-Feel free to drop us a comment and let us know what you think. All new sign ups will receive a 30-day free trial of our Pro subscription, plus 25% off your first year.
+- **Continued support from Mermaid Chart**: At Mermaid Chart, we value our still-growing Mermaid JS roots. As such, we have funneled back development and support to the project. Thanks to the successful seed round, we can continue to ramp up these efforts.
 
-We’re on a mission to make text-based diagramming fun again. And we need your help to make that happen.
+We are incredibly excited about the future and are grateful to the community, our team, and our investors for being part of this journey. Together, we're not just creating diagrams; we're designing the future of collaboration.
 
-Your support means the world to us. Thank you for being part of the diagramming movement.
+🌐 Learn more about our groundbreaking tools and what's next for Mermaid Chart by visiting [our website](https://www.mermaidchart.com/blog/posts/mermaid-chart-raises-7.5m-to-reinvent-visual-collaoration-for-enterprises).
+
+Thank you for being part of our story. Here's to creating, innovating, and collaborating on a global scale!
+
+Knut Sveidqvist 🧜‍♂️✨
+
+## Mermaid Chart's Visual Editor for Flowcharts and Sequence diagrams
+
+The Mermaid Chart team is excited to introduce a new Visual Editor for Flowcharts and Sequence diagrams, enabling users of all skill levels to create diagrams easily and efficiently, with both GUI and code-based editing options.
+
+Learn more:
+
+- Visual Editor For Flowcharts
+
+  - [Blog post](https://www.mermaidchart.com/blog/posts/mermaid-chart-releases-new-visual-editor-for-flowcharts)
+
+  - [Demo video](https://www.youtube.com/watch?v=5aja0gijoO0)
+
+- Visual Editor For Sequence diagrams
+
+  - [Blog post](https://www.mermaidchart.com/blog/posts/mermaid-chart-unveils-visual-editor-for-sequence-diagrams)
+
+  - [Demo video](https://youtu.be/imc2u5_N6Dc)
+
+## 📖 Blog posts
+
+Visit our [Blog](./blog.md) to see the latest blog posts.
